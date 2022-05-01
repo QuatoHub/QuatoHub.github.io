@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-about-tsx",
+    "path": "/about/",
+    "result": {"data":{"resume":{"childrenMarkdownRemark":[{"html":"<deckgo-highlight-code language=\"javascript\" terminal=\"carbon\" theme=\"seti\"  >\n          <code slot=\"code\">let hy = {\n    name: &#39;문현준&#39;,\n    email: &#39;hyeonjun5256@gmail.com&#39;,\n    skills: [&#39;TypeScript&#39;, &#39;NestJS&#39;, &#39;React&#39;, &#39;Redux&#39;, &#39;AWS&#39; ···]\n}</code>\n        </deckgo-highlight-code>\n<br />\n<p>안녕하세요. 웹 개발에 대해 학습하고 있는 <strong>문현준</strong>입니다.</p>\n<p>NestJS 위주의 <strong>백엔드</strong> 기술을 중점적으로 공부하고 있습니다.</p>\n<br />\n<p>경험을 통해 시야를 넓혀</p>\n<p>기능 구현에만 초점을 맞추지 않고</p>\n<p><strong>비즈니스 가치를 구현하는 개발자</strong>가 되는 것을 목표로 하고 있습니다.</p>"}]}},"pageContext":{}},
+    "staticQueryHashes": ["2368566813","3026479947","3227158195"]}

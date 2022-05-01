@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_blog=self.webpackChunkgatsby_starter_blog||[]).push([[5592],{2028:function(e,t,s){s.r(t);var r=s(6771),a=s(7294),n=s(7019),l=s(3431);var u=(0,r.Z)("div",{target:"eneo32d0"})({name:"99e1gm",styles:"margin:15rem auto;font-size:3rem"});t.default=function(){return(0,l.jsx)(a.Fragment,null,(0,l.jsx)(n.Z,{title:"Book | MZ's Devlog"}),(0,l.jsx)(u,null,"🚧 공사중입니다 🚧"))}}}]);
+//# sourceMappingURL=component---src-pages-book-tsx-d72af4c64edd388a874d.js.map

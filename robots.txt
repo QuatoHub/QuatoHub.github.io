@@ -1,2 +1,7 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /404
+Disallow: /about
+Disallow: /page
+Sitemap: https://quatoHub.github.io/sitemap.xml
+Host: https://quatohub.github.io
