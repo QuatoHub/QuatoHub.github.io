@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_blog=self.webpackChunkgatsby_starter_blog||[]).push([[5592],{2028:function(e,t,s){s.r(t);var a=s(6771),r=s(7294),n=s(7019),l=s(3431);var u=(0,a.Z)("div",{target:"eneo32d0"})({name:"99e1gm",styles:"margin:15rem auto;font-size:3rem"});t.default=function(){return(0,l.jsx)(r.Fragment,null,(0,l.jsx)(n.Z,{title:"Book | Quato's Devlog"}),(0,l.jsx)(u,null,"🚧 공사중입니다 🚧"))}}}]);
+//# sourceMappingURL=component---src-pages-book-tsx-ff99fa6828356fc941a5.js.map
