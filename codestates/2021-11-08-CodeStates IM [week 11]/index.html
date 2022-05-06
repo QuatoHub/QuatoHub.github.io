@@ -1,0 +1,642 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta data-react-helmet="true" name="theme-color" content="#6868AC"/><meta data-react-helmet="true" property="email" content="hyeonjun5256@gmail.com"/><meta data-react-helmet="true" name="twitter:image" content="/static/5ae71771cc28d8142710f1d07c2f1e79/codestate-software-engineer.jpeg"/><meta data-react-helmet="true" name="twitter:description" content="CodeState Pre IM 11주차 기록입니다."/><meta data-react-helmet="true" name="twitter:title" content="CodeStates IM [week 11]"/><meta data-react-helmet="true" property="og:site_name" content="Quato&#x27;s Devlog"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:image" content="/static/5ae71771cc28d8142710f1d07c2f1e79/codestate-software-engineer.jpeg"/><meta data-react-helmet="true" property="og:description" content="CodeState Pre IM 11주차 기록입니다."/><meta data-react-helmet="true" property="og:title" content="CodeStates IM [week 11]"/><meta data-react-helmet="true" name="author" content="문현준"/><meta data-react-helmet="true" name="keywords" content="HTML, CSS, JavaScript, TypeScript, React, Nest.js, Gatsby, GitHub, BackEnd"/><meta data-react-helmet="true" name="description" content="CodeState Pre IM 11주차 기록입니다."/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0"/><meta data-react-helmet="true" name="naver-site-verification" content="2cc40621eb11418be5791db057b14a2d2cc2800c"/><meta data-react-helmet="true" name="google-site-verification" content="ThKzC9Ke4fdkwmI6LxXq7CXp6FomQ2uSYoTVOORXL40"/><meta name="generator" content="Gatsby 4.13.0"/><title data-react-helmet="true">CodeStates IM [week 11]</title><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="canonical" href="https://quatohub.github.io/CodeStates/2021-11-08-CodeStates%20IM%20[week%2011]/" data-baseprotocol="https:" data-basehost="quatohub.github.io"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="icon" href="/favicon-32x32.png?v=ed4798368a9b79c2dfd1a1d11971b86d" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=ed4798368a9b79c2dfd1a1d11971b86d"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=ed4798368a9b79c2dfd1a1d11971b86d"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=ed4798368a9b79c2dfd1a1d11971b86d"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=ed4798368a9b79c2dfd1a1d11971b86d"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=ed4798368a9b79c2dfd1a1d11971b86d"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=ed4798368a9b79c2dfd1a1d11971b86d"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=ed4798368a9b79c2dfd1a1d11971b86d"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=ed4798368a9b79c2dfd1a1d11971b86d"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-ead9db5194c6cab640af.js"/><link as="script" rel="preload" href="/framework-53b3056a63989a6bbb20.js"/><link as="script" rel="preload" href="/app-0ed7e91c6f5154e7479a.js"/><link as="script" rel="preload" href="/commons-3f190f1558c40e6e812e.js"/><link as="script" rel="preload" href="/8b19f8696c6d1a3824c107eabb09d602e81c149c-00846531150fecae10b4.js"/><link as="script" rel="preload" href="/1ad49f364241ea80ec6cc70e358d5df1079af924-c84ac1aa142bbc5e099a.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-tsx-8a622d0614fdbb4a61b4.js"/><link as="fetch" rel="preload" href="/page-data/CodeStates/2021-11-08-CodeStates IM [week 11]/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2368566813.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3026479947.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3227158195.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/413061808.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion="css 1tb6sot">.css-1tb6sot{height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin:0 auto;}</style><div class="css-1tb6sot e17pfa8w1"><style data-emotion="css-global 1aozr1t">@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}*{box-sizing:border-box;}a{-webkit-text-decoration:none;text-decoration:none;color:inherit;}input,button{outline:none;border:none;background-color:transparent;}html{color:rgba(41, 40, 45, 1);font-family:Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,'Helvetica Neue','Segoe UI','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol',sans-serif;font-weight:400;font-size:62.5%;letter-spacing:-0.2px;}@media all and (min-width: 280px) and (max-width: 768px){html{font-size:50%;}}html,body,#___gatsby,#gatsby-focus-wrapper{width:100%;height:100%;margin:0;padding:0;border:0;}::-webkit-scrollbar{width:10px;}::-webkit-scrollbar-thumb{background-color:rgba(98, 92, 96, 0.7);border-radius:10px;-webkit-background-clip:padding-box;background-clip:padding-box;border:2px solid transparent;}::-webkit-scrollbar-track{background-color:rgba(241, 237, 233, 0.5);border-radius:10px;box-shadow:inset 0px 0px 5px white;}::selection{background-color:rgba(104, 104, 172, 0.8);color:rgba(255, 255, 255, 1);}</style><style data-emotion="css 9jx9c8">.css-9jx9c8{position:fixed;top:0;z-index:1000;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;background:rgba(255, 255, 255, 1);-webkit-transition:box-shadow 0.5s;transition:box-shadow 0.5s;}.css-9jx9c8.scrolled{box-shadow:0 0 1.2rem rgba(98, 92, 96, 0.3);}</style><header class="css-9jx9c8 eame3345"><style data-emotion="css 5m1xq0">.css-5m1xq0{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:70rem;height:6rem;}@media all and (min-width: 280px) and (max-width: 768px){.css-5m1xq0{width:100%;padding:0 1rem;}}</style><nav class="css-5m1xq0 eame3344"><style data-emotion="css 2waww4">.css-2waww4{width:20rem;}</style><a class="css-2waww4 eame3343" href="/"><style data-emotion="css mn5luc">.css-mn5luc{font-size:2rem;font-weight:bold;}</style><div class="css-mn5luc eame3342">quatoHub.com</div></a><style data-emotion="css 8i8d6r">.css-8i8d6r{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:2rem;font-weight:bold;margin-right:2rem;}</style><div class="css-8i8d6r eame3341"><style data-emotion="css 1h3b52r">.css-1h3b52r{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:2rem;width:4rem;height:4rem;margin:0 0 0 5rem;}.css-1h3b52r:hover{background-color:rgba(241, 237, 233, 0.5);}.css-1h3b52r svg{width:2.5rem;height:2.5rem;fill:rgba(41, 40, 45, 1);}</style><a aria-label="about" class="css-1h3b52r eame3340" href="/about">about</a><a aria-label="category" class="css-1h3b52r eame3340" href="/category">category</a></div></nav></header><style data-emotion="css 1i3if2v">.css-1i3if2v{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex:1;-ms-flex:1;flex:1;width:72rem;margin:0 auto;padding:6rem 0 0;}@media all and (min-width: 280px) and (max-width: 768px){.css-1i3if2v{width:100%;padding:6rem 1rem 0;}}</style><main class="css-1i3if2v e17pfa8w0"><style data-emotion="css 1w5c6dy">.css-1w5c6dy{width:100%;height:30rem;margin:3rem 0 0;border-radius:1rem;overflow:hidden;z-index:0;}@media all and (min-width: 280px) and (max-width: 768px){.css-1w5c6dy{width:100%;height:auto;}}</style><div class="css-1w5c6dy e1aez71"><style data-emotion="css 1nh0r1x">.css-1nh0r1x{width:100%;height:100%;object-fit:cover;border-radius:1rem;isolation:isolate;}</style><div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained css-1nh0r1x e1aez70"><div style="max-width:730px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;411&#x27; width=&#x27;730&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div><img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear" decoding="async" src="data:image/jpeg;base64,/9j/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAEGBwn/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwb/2gAMAwEAAhADEAAAAdhYTZq2hBk1/8QAGBABAQADAAAAAAAAAAAAAAAABAMFBiD/2gAIAQEAAQUCci5jHyWx1Rx//8QAHBEBAAEEAwAAAAAAAAAAAAAAASECETFxEBJC/9oACAEDAQE/AUX3UYg6TbdKzhs6szx//8QAGxEAAgIDAQAAAAAAAAAAAAAAAQIDIQAREiL/2gAIAQIBAT8BV1CFTDG5JqRjL2tEaHMipq+rQ+gN1Rz/xAAhEAACAgEDBQEAAAAAAAAAAAACAwEEEgURIgAGFBUgI//aAAgBAQAGPwJjq1F+ouGOFSuyspjJxKY523V0iOUCJfply3ES2nrTAb24Nau9aPaOZqSDKi01ybhrrTLPJBB7KyKQk5nKIx+f/8QAFxABAQEBAAAAAAAAAAAAAAAAAREgUf/aAAgBAQABPyFMTOwEaIWIYALXwmCyRtpZQuf/2gAMAwEAAgADAAAAEBsP/8QAGBEBAQEBAQAAAAAAAAAAAAAAARExECH/2gAIAQMBAT8QcECKRilRZ5wPNcH/xAAXEQEBAQEAAAAAAAAAAAAAAAABERAh/9oACAECAQE/EFWWQFCi4GFvQby//8QAGxABAQACAwEAAAAAAAAAAAAAAREQUQAxkUH/2gAIAQEAAT8QL2S311OpjrH4MVdtjNj0zgoSwpGFNP0xDR5rrzH/2Q==" alt=""/><picture><source type="image/webp" data-srcset="/static/5ae71771cc28d8142710f1d07c2f1e79/98c3d/codestate-software-engineer.webp 183w,/static/5ae71771cc28d8142710f1d07c2f1e79/da319/codestate-software-engineer.webp 365w,/static/5ae71771cc28d8142710f1d07c2f1e79/e195b/codestate-software-engineer.webp 730w,/static/5ae71771cc28d8142710f1d07c2f1e79/b523f/codestate-software-engineer.webp 1460w" sizes="(min-width: 730px) 730px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 730px) 730px, 100vw" decoding="async" loading="lazy" data-src="/static/5ae71771cc28d8142710f1d07c2f1e79/9d1bb/codestate-software-engineer.jpg" data-srcset="/static/5ae71771cc28d8142710f1d07c2f1e79/35c22/codestate-software-engineer.jpg 183w,/static/5ae71771cc28d8142710f1d07c2f1e79/0837d/codestate-software-engineer.jpg 365w,/static/5ae71771cc28d8142710f1d07c2f1e79/9d1bb/codestate-software-engineer.jpg 730w,/static/5ae71771cc28d8142710f1d07c2f1e79/0a556/codestate-software-engineer.jpg 1460w" alt="thumbnail"/></picture><noscript><picture><source type="image/webp" srcSet="/static/5ae71771cc28d8142710f1d07c2f1e79/98c3d/codestate-software-engineer.webp 183w,/static/5ae71771cc28d8142710f1d07c2f1e79/da319/codestate-software-engineer.webp 365w,/static/5ae71771cc28d8142710f1d07c2f1e79/e195b/codestate-software-engineer.webp 730w,/static/5ae71771cc28d8142710f1d07c2f1e79/b523f/codestate-software-engineer.webp 1460w" sizes="(min-width: 730px) 730px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 730px) 730px, 100vw" decoding="async" loading="lazy" src="/static/5ae71771cc28d8142710f1d07c2f1e79/9d1bb/codestate-software-engineer.jpg" srcSet="/static/5ae71771cc28d8142710f1d07c2f1e79/35c22/codestate-software-engineer.jpg 183w,/static/5ae71771cc28d8142710f1d07c2f1e79/0837d/codestate-software-engineer.jpg 365w,/static/5ae71771cc28d8142710f1d07c2f1e79/9d1bb/codestate-software-engineer.jpg 730w,/static/5ae71771cc28d8142710f1d07c2f1e79/0a556/codestate-software-engineer.jpg 1460w" alt="thumbnail"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div></div><style data-emotion="css uzkmp3">.css-uzkmp3{display:-webkit-box;-webkit-box-orient:vertical;word-break:keep-all;font-size:3rem;font-weight:700;padding:2.5rem 0;line-height:130%;}</style><h1 class="css-uzkmp3 e1kz37zx4">CodeStates IM [week 11]</h1><style data-emotion="css 1066lcq">.css-1066lcq{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}</style><div class="css-1066lcq e1kz37zx3"><style data-emotion="css qtuq31">.css-qtuq31{font-size:1.5rem;color:rgba(98, 92, 96, 0.7);}</style><span class="css-qtuq31 e1kz37zx2">08 November, 2021<!-- --> · <!-- -->17<!-- --> min read</span><style data-emotion="css 1gvv2zi">.css-1gvv2zi{padding:0.4rem;border-radius:0.3rem;background:rgba(41, 40, 45, 1);color:rgba(255, 255, 255, 1);font-size:1.3rem;font-weight:700;}.css-1gvv2zi:hover{background:rgba(104, 104, 172, 1);}</style><a class="css-1gvv2zi e1kz37zx1" href="/codestates">Codestates</a></div><style data-emotion="css zhpd1l">.css-zhpd1l{width:100%;border:0.1rem solid rgba(241, 237, 233, 0.5);margin:1.5rem 0;}</style><hr class="css-zhpd1l e1kz37zx0"/><style data-emotion="css 1fjudye">.css-1fjudye{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;width:100%;margin:0 auto;padding:3rem 0;word-wrap:break-word;line-height:175%;font-size:1.7rem;font-weight:400;color:rgba(41, 40, 45, 1);}.css-1fjudye h1,.css-1fjudye h2,.css-1fjudye h3{font-weight:700;line-height:130%;}.css-1fjudye h1{font-size:2.8rem;margin-bottom:2.7rem;}.css-1fjudye h2{font-size:2.3rem;margin-bottom:2.4rem;}.css-1fjudye h3{font-size:1.8rem;margin-bottom:2rem;}.css-1fjudye *+h1{margin-top:5.4rem;}.css-1fjudye *+h2{margin-top:4.8rem;}.css-1fjudye *+h3{margin-top:4rem;}.css-1fjudye hr+h1,.css-1fjudye hr+h2,.css-1fjudye hr+h3{margin-top:0;}.css-1fjudye p{margin:2rem 0;}.css-1fjudye blockquote{margin:2.7rem 0;padding:0.5rem 1.5rem;border-left:0.4rem solid rgba(104, 104, 172, 1);background-color:rgba(241, 237, 233, 0.5);}.css-1fjudye blockquote strong{font-weight:700;}.css-1fjudye blockquote p{margin:0.5rem 0;}.css-1fjudye ol,.css-1fjudye ul{margin-top:0;margin-bottom:0;padding:0 0 0 3rem;}.css-1fjudye ol p,.css-1fjudye ul p{margin:0.5rem 0;}.css-1fjudye ul{list-style-type:disc;}.css-1fjudye ul ul{list-style-type:circle;}.css-1fjudye ul ul ul{list-style-type:square;}.css-1fjudye ol{list-style-type:decimal;}.css-1fjudye details summary{cursor:pointer;}.css-1fjudye hr{border:0.1rem solid rgba(98, 92, 96, 0.3);margin:5.5rem 0;}.css-1fjudye a{font-weight:700;color:rgba(104, 104, 172, 1);}.css-1fjudye a:active,.css-1fjudye a:hover{outline-width:0;}.css-1fjudye strong{font-weight:700;}.css-1fjudye img{width:100%;border-style:none;border-radius:1rem;}.css-1fjudye em{font-size:1.2rem;font-style:italic;display:block;text-align:center;margin:-1.5rem auto 0;word-break:keep-all;}.css-1fjudye table{display:table;border:0.2rem solid rgba(98, 92, 96, 0.3);border-collapse:collapse;margin:1rem 0;}.css-1fjudye thead{display:table-header-group;font-weight:700;border-bottom:0.5rem solid rgba(98, 92, 96, 0.3);}.css-1fjudye tr{display:table-row;}.css-1fjudye th,.css-1fjudye td{display:table-cell;padding:1rem;border:0.2rem solid rgba(98, 92, 96, 0.3);}.css-1fjudye .deckgo-highlight-code-carbon{margin:1.5rem 0 2.5rem 0;border-radius:1rem;font-size:1.5rem;}.css-1fjudye code{margin:0 0.3rem 0 0;padding:0.2rem 0.6rem;border-radius:0.3rem;background:#e9ecef;font-size:85%;}</style><div class="css-1fjudye e18idwmx0"><h2>📆   2021. 11. 08 (월)</h2>
+<h3><span>[Linux] 환경변수, 사용권한</span></h3>
+<p> </p>
+<p><strong>Read, Write, Execute 권한</strong></p>
+<p>폴더인지 파일인지 확인하기</p>
+<p>모든 파일에는 사용자마다 접근할 수 있는 권한이 있다.
+파일을 읽을 수 있어도 실행하지 못할 수도 있고, 디렉토리에 들어가도 파일을 읽을 수 없을 수도 있다.
+리눅스에서는 파일마다 정교하게 권한을 설정할 수 있다.
+보안상 접근 권한을 정확히 설정해주는 것이 좋다.</p>
+<p>한 번 파일을 조회해보자.</p>
+<p>폴더 내에 있는 파일을 조회하기 위해서는 ls -l 명령어를 사용하면 된다.
+-l은 파일에 대한 권한 정보를 보기 위해서 필요한 옵션이다.
+아래와 같은 구조의 리스트를 확인할 수 있다.</p>
+<p><img src="https://images.velog.io/images/quato/post/218b7381-41a5-4fb7-a040-504f4d2e2906/image.png" alt=""></p>
+<p> </p>
+<p><strong>chmod: 권한을 변경하는 명령어</strong></p>
+<p>Symbolic method 문자 이용하기</p>
+<p>명령어 chmod 뒤에 변경할 권한을 입력한다.
+액세스 클래스의 u, g, o, a를 변경할 조건에 따라 조합하여 입력하고, 연산자와 액세스 타입을 순서대로 입력하면 된다.</p>
+<p>chmod [a,u,g,o][+,-,=][r,w,x] 순으로 선택해서 조합할 수 있다.</p>
+<p> </p>
+<p><strong>a,u,g,o : Access class. 권한을 부여할 대상.</strong></p>
+<p><code>a</code> : 전체. (all: u, g, and o).<br>
+<code>u</code> : 소유자. user. 기본적으로 파일을 만든 사람이 소유자.<br>
+<code>g</code> : 소유 그룹. group에는 여러 user가 포함될 수 있다.<br>
+그룹에 속한 모든 user는 파일에 대한 동일한 group 액세스 권한을 갖는다.<br>
+<code>o</code> : others. 파일을 만들지 않은 다른 모든 user.</p>
+<p> </p>
+<p><strong>+,-,= : Operator.</strong></p>
+<p><code>+</code> : add access. 추가<br>
+<code>-</code> : remove access. 제거<br>
+<code>=</code> : set exact access. 업데이트(기존 권한 무시하고 새롭게)</p>
+<p> </p>
+<p><strong>r,w,x : Access Type.</strong></p>
+<p><code>r</code> : read.<br>
+<code>w</code> : write.<br>
+<code>x</code> : execute.</p>
+<deckgo-highlight-code language="bash" terminal="carbon" theme="seti"  >
+          <code slot="code">chmod g-r filename # removes read permission from group
+chmod g+r filename # adds read permission to group
+chmod g-w filename # removes write permission from group
+chmod g+w filename # adds write permission to group
+chmod g-x filename # removes execute permission from group
+chmod g+x filename # adds execute permission to group
+chmod o-r filename # removes read permission from other
+chmod o+r filename # adds read permission to other
+chmod o-w filename # removes write permission from other
+chmod o+w filename # adds write permission to other
+chmod o-x filename # removes execute permission from other
+chmod o+x filename # adds execute permission to other
+chmod u+x filename # adds execute permission to user
+chmod go-w sample
+chmod u=rwx, go-wx sample # 소유자에게는 읽기,쓰기,실행 권한을 부여하고 / 그룹과 기타 사용자에게는 쓰기,실행 권한 제거.
+
+chmod a=rw helloworld.js  # -rw-rw-rw-
+chmod u= helloworld.js    # ----rw-rw-
+chmod a+rx helloworld.js  # -r-xrwxrwx
+chmod go-wx helloworld.js # -r-xr--r--
+chmod a= helloworld.js    # ----------
+chmod u+rwx helloworld.js # -rwx------</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>Absolute form 숫자 이용하기</strong></p>
+<p>rwx 문자가 아니라 각각의 자리값을 합친 값으로 권한을 부여할 수 있다.
+숫자 7까지 나타내는 3 bits의 합으로 표기한다.
+r=4, w=2, x=1이다. 예를 들어, rwx권한은 4+2+1=7이 된다.</p>
+<deckgo-highlight-code language="bash" terminal="carbon" theme="seti"  >
+          <code slot="code">chmod 644 sample # 소유자에게는 읽기,쓰기(6) / 그룹 과 기타 사용자에게는 읽기(4)
+chmod 777 sample # 모든 사용자에게 읽기,쓰기,실행(7) 권한을 부여
+
+# u=rwx (4 + 2 + 1 = 7), go=r (4 + 0 + 0 = 4)
+chmod 744 helloworld.js # -rwxr--r--</code>
+        </deckgo-highlight-code>
+<p>4(r) + 2(w) + 1(x) rwx read, write and execute<br>
+4(r) + 2(w) + 0(-) rw- read and write<br>
+4(r) + 0(-) + 1(x) r-x read and execute<br>
+4(r) + 0(-) + 0(-) r– read only<br>
+0(-) + 2(w) + 1(x) -wx write and execute<br>
+0(-) + 2(w) + 0(-) -w- write only<br>
+0(-) + 0(-) + 1(x) –x execute only<br>
+0(-) + 0(-) + 0(-) — none</p>
+<p> </p>
+<p><strong>환경변수 사용법</strong></p>
+<p>아무런 인자없이 export 명령을 내리면 전체 환경 변수 목록을 확인할 수 있다.
+export 명령에 환경 변수와 = 기호와 값을 표현해서 환경 변수의 값을 설정할 수 있다.</p>
+<p>특정 환경 변수의 값을 확인할 때는 echo 명령을 사용한다.
+명령어 echo 와 함께 환경변수를 입력하면, 환경변수의 값을 확인할 수 있다.
+이때 환경변수의 앞에는 달러사인($)을 입력하여, 변수라는 뜻을 터미널에 전달해준다.</p>
+<deckgo-highlight-code language="bash" terminal="carbon" theme="seti"  >
+          <code slot="code">export
+export SHELL=/bin/bash
+echo $SHELL</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>dotenv: 자바스크립트에서 환경변수 사용하기</strong></p>
+<p>자세한 내용은 따로 포스트를 작성해야겠다</p>
+<p>npm 모듈 dotenv를 사용하면, 자바스크립트에서 환경변수를 사용할 수 있다.
+npm 모듈을 설치하고 사용하기 위해서, 새로운 폴더를 만들고 npm init 을 입력한다. 그리고 npm i dotenv 를 입력해 모듈을 설치한다.
+이때 생성된 폴더는 설치할 모듈과 이름이 같아서는 안된다.</p>
+<deckgo-highlight-code language="bash" terminal="carbon" theme="seti"  >
+          <code slot="code">mkdir environment_variable
+cd environment_variable
+npm init     # 엔터 키를 여러번 입력해 init 완료.
+npm i dotenv # dotenv 모듈을 설치.</code>
+        </deckgo-highlight-code>
+<p> </p>
+<h2>📆   2021. 11. 09 (화)</h2>
+<h3><span>[Algorithm] Greedy</span></h3>
+<p> </p>
+<p><strong>Greedy Algorithm</strong></p>
+<p>이름부터가 탐욕스러운 이 알고리즘은 눈 앞에 보이는 최적의 상황만을 탐욕적으로 쫓아 최종적인 해답에 도달하는 방법이다. Greedy Algorithm의 문제 해결법을 단계적으로 나누어 본다면 아래와 같다.</p>
+<p><strong>1. 선택절차(Selection Procedure)</strong> : 현재 상태에서의 최적의 해답을 선택한다.<br>
+<strong>2. 적절성 검사(Feasibillity Check)</strong> : 선택된 해가 문제의 조건을 만족하는지 검사합니다.<br>
+<strong>3. 해답 검사(Solution Check)</strong>: 원래의 문제가 해결되었는지 검사하고, 해결되지 않았다면 1번으로 돌아가 반복합니다.</p>
+<p>일반적으로 Greedy Algorithm을 설명할 때 가장 많이 나오는 것이 거스름돈의 사례인 것 같다. 거스름돈을 줄 때는 기본적으로 가장 큰 단위의 동전을 최대한 사용한 다음 그 다음 단위의 동전을 최대한 사용하는 식으로 해야 거슬러주는 동전의 수를 최적화시킬 수 있다.
+예를 들어 970원을 거슬러 주려고 할 때에는 특정 단위의 동전이 부족한게 아니라면 아래와 같이 거슬러 주게 될 것이다.</p>
+<p>500원 짜리 1개, 100원짜리 4개, 50원짜리 1개, 10원짜리 2개</p>
+<p> </p>
+<p><strong>1. 선택절차</strong> : 가장 큰 단위의 동전을 선택한다. 가장 큰 단위의 동전을 선택하는 것이 탐욕!</p>
+<p>a. 500원 선택 (a-1로)<br>
+b. 100원 선택 (b-1로)<br>
+c. 50원 선택 (c-1로)<br>
+d. 10원 선택 (d-1로)<br>
+e. 선택할 동전 없음(e-1로)</p>
+<p> </p>
+<p><strong>2. 적절성검사</strong> : 1번 과정을 통해 선택된 동전들의 합이 거슬러줄 금액을 초과하는지 확인한다.</p>
+<p>a-1. 500원 2개를 선택하면 거슬러줄 금액을 초과하므로 마지막에 추가한 동전을 빼고 1번으로 돌아가 한 단계 낮은 단위의 동전을 선택한다. (b로)<br>
+b-1. 100원짜리를 5개째 추가하다 보니 또 거슬러줄 금액을 초과했다. 마지막에 추가한 100원짜리 동전을 다시 빼고 한 단계 낮은 단위의 동전을 선택한다. (c로)<br>
+c-1. (중략) (d로)<br>
+d-1. 10원짜리 동전을 2개 3개 추가했을 때 거슬러줄 금액을 초과했다. 마지막에 추가한 동전을 내려 놓고 한 단계 낮은 단위의 동전을 선택하려 했으나 더 이상 없다. (e로)<br>
+e-1. 더 이상 초과하지 않으므로 3번 단계로 넘어 간다.</p>
+<p> </p>
+<p><strong>3. 해답 검사</strong>: 선택된 동전들의 합이 거슬러줄 금액과 일치한다. 여기서 종결.</p>
+<p> </p>
+<p><strong>Greedy Algorithm 문제 : 짐 나르기</strong></p>
+<p>박스에 짐을 2개를 묶어 넣기 위해 시도하려면 크게 3가지로 시도해 볼 수 있다.</p>
+<blockquote>
+<p>가장 무거운 짐과 두 번째로 무거운 짐을 묶기 위해 시도한다.
+가장 가벼운 짐과 두 번째로 가벼운 짐을 묶기 위해 시도한다.
+가장 무거운 짐과 가장 가벼운 짐을 묶기 위해 시도한다.</p>
+</blockquote>
+<p>1번 방법 가장 무거운 짐들끼리 묶어도 limit을 초과하지 않는 상황이라면 stuff는 어떤 조합으로도 묶는 것이 가능할 것이다. 그 다음 무거운 짐을 다시 선택해서 묶기 위해 시도해 본다. 묶어지지 않는 다면 다시 그 다음 무거운 짐으로… 문제는 이러다가 limit이 넘지 않는 조합을 찾았다고 하더라도 가장 무거운 짐과 조합한 짐이 배열의 중간에 있기 때문에 묶은 짐들을 제외하는 작업에서 어려움을 겪게 된다. (이걸 구현하기 위해 시도하다가 몇 시간 동안 제자리 뛰기를 했다.)</p>
+<p>2번 방법 가장 가벼운 짐들끼리 묶었을 때 limit를 초과한다면, 이 stuff에는 그 어떤 조합도 나올 수 없다. 만약 묶인다고 해도, 아래의 예를 보면 효율적으로 묶었다고 판단하기는 어려울 것이다.</p>
+<blockquote>
+<p>stuff = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+limit = 11
+가벼운 순서대로 앞에서 부터 묶어 보기 [1, 2][3, 4] [5, 6][7] [8][9] [10]</p>
+</blockquote>
+<p>위와 같이 초반에 순조롭게 묶이는 것 같지만 뒤로 가면 갈 수록 비효율적인 조합이 된다. 실제로 저렇게 짐을 포장하면, 어떤 박스는 짐이 2개 들어가고도 텅텅 비어 있을 것이다.</p>
+<p>3번 방법 이 방법이 가장 효율적이라는 것을 찾는 데만 엄청나게 오랜 시간이 걸렸다. 이 방법을 사용하니 묶은 짐들을 제거하기에도 용이했다. 이제 Greedy Algorithm의 3단계로 넘어가 보자.</p>
+<p>선택 절차 : 가장 무거운 짐과 가장 가벼운 짐을 선택한다.
+적절성 검사 : 선택한 짐들의 무게의 합이 limit을 초과하는지 확인한다. 초과하지 않는다면 둘을 묶어서 한 박스에 넣은 후, 1로 돌아가 그 다음 무거운 짐과 그 다음 가벼운 짐을 선택한다. 초과한다면, 가장 무거운 짐은 어차피 다른 짐과 조합이 불가능하다. 따로 빼놓고 1번으로 돌아가 그 다음 무거운 짐을 선택한다.
+해답 검사 : 위 과정을 반복하다 보면 묶인 조합들이 나오게 될 것이다. 몇 개의 조합이 나왔는지 파악한 후, stuff의 요소의 갯수에서 조합의 수를 빼주면 된다.</p>
+<p>짐 나르기</p>
+<deckgo-highlight-code language="js" terminal="carbon" theme="seti"  >
+          <code slot="code">function movingStuff(stuff, limit) {
+  let package = 0; // package 변수를 선언하고 0할당. limit을 넘지 않는 조합이 나오면 pakage++를 해줄 것이다.
+  let sorted = stuff.sort((a, b) =&gt; a - b); // stuff를 오름차순으로 정렬하는 방법이다. 그냥 암기해두면 유용하다.
+  let largeIdx = sorted.length - 1; // 가장 무거운 짐의 인덱스
+  // 처음에는 인덱스가 아니라 sorted[sorted.length - 1]을 할당했다. 만약 양쪽 끝에 있는 짐들의 조합이 가능 하면 pop()과 shift()를 사용하면 되는데 가장 무거운 짐을 조합하지 못해서 그 다음 무거운 짐을 선택하는 순간 조합이 되었을 때 그 짐을 제외할 방법이 너무 복잡해진다. 인덱스를 할당하면 된다는 것을 깨닫는데 또 어마어마한 시간의 제자리 걸음이 있었다.
+  let smallIdx = 0; // 가장 가벼운 짐의 인덱스는 당연히 0
+
+  while (largeIdx &gt; smallIdx) {
+    // while 반복문을 사용하는 것은 가장 마지막에 떠올린 퍼즐조각이었다. &#39;반복문 = for&#39;를 머리에 두고 있으니 가끔 끝날 것 같은 상황에 끝나지 않는 답답한 상황이 생긴다. 그럴 때는 while을 간과하고 있지 않은지 점검하자.
+    if (sorted[smallIdx] + sorted[largeIdx] &lt;= limit) {
+      //가장 무거운 + 가장 가벼운 &lt;= limit인지 확인한다.
+      //참일 경우
+      package++; // package로 묶어 주고
+      smallIdx++; // 그 다음 가벼운 짐을 선택
+      largeIdx--; // 그 다음으로 무거운 짐을 선택
+      // pop(), shift()따위...
+    } else {
+      //거짓일 경우
+      largeIdx--; // 그 다음으로 무거운 짐을 선택
+    }
+  }
+  return stuff.length - package; //짐을 한개씩 나르는 경우의 수에서 count빼준다.
+}</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>Dynamic Programming</strong></p>
+<p>동일하게 작은 문제에서 출발하지만, Greedy Algorithm이 순간의 최적의 방법으로 시작하는 방법이라면, Dynamic Programming은 모든 경우의 수를 따져본 후 이를 조합해 최적의 방법을 찾는다.</p>
+<p>주어진 문제를 여러 개의 하위 문제로 나누어 풀고, 하위 무제들의 해결 방법을 결합하여 최종 문제를 해결한다.</p>
+<p>사용하기 위한 조건도 있다.</p>
+<blockquote>
+<p>Overlapping Sub-problem: 큰 문제들을 작은 문제로 나눌 수 있고, 이 작은 문제들은 중복된다.
+Optional Substruction: 작은 문제에서 구한 정답은 그것을 포함하는 큰 문제에서도 같다. 즉, 작은 문제에서 구한 정답을 큰 문제에서도 사용할 수 있다.</p>
+</blockquote>
+<deckgo-highlight-code language="js" terminal="carbon" theme="seti"  >
+          <code slot="code">const fibonacci = (n) =&gt; {
+  if (n &lt;= 2) { // 멈춤 조건은 n이 계속 작아지다가 2와 같거나 작아졌을 때
+    return 1; // n이 2라는 것은 두 번째 피보나치를 리턴하면 된다는 뜻이다.
+  }
+return fibonacci(n - 1) + fibonacci(n - 2);
+// 입력된 n에서 1을 뺀 값과 2를 뺀 값을 각각 재귀한 후 더 해준다.
+}
+
+// 이렇게 코드를 구현했을 때 구하는 과정은 아래와 같다.
+fibonacci(7) = fibonacci(6) + fibonacci(5)
+fibonacci(6) = fibonacci(5) + fibonacci(4)
+fibonacci(5) = fibonacci(4) + fibonacci(3)
+.....</code>
+        </deckgo-highlight-code>
+<p>위 그림과 같이 같은 값을 계속해서 반복해서 구하게 된다. 안 그래도 재귀를 사용해서 작업이 복잡한데, 같은 값을 반복해서 구하다 보니 시간이 오래 걸리게 된다. 콘솔창에 입력해보니 32정도부터 눈에 띄게 딜레이가 생겼다</p>
+<p>Dynamic Programming은 하위 문제의 해결책을 저장한 뒤 동일한 하위 문제가 나왔을 경우 저장해 놓은 해결책을 이용한다.</p>
+<p> </p>
+<p><strong>Recursion + Memoization</strong></p>
+<deckgo-highlight-code language="js" terminal="carbon" theme="seti"  >
+          <code slot="code">function fibMemo(n, memo = []) {
+  if (memo[n] !== undefined) {
+    return memo[n];
+  }
+  // 이미 해결한 하위 문제인지 찾아본다
+  if (n &lt;= 2) {
+    return 1;
+  }
+
+  let res = fibMemo(n - 1, memo) + fibMemo(n - 2, memo);
+  // 없다면 재귀로 결과값을 도출하여 res 에 할당
+  memo[n] = res;
+  // 추후 동일한 문제를 만났을 때 사용하기 위해 리턴 전에 memo 에 저장
+  return res;
+}
+
+//먼저 fibMemo 함수의 파라미터로 n 과 더불어 빈 배열을 전달합니다. 이 빈 배열은 하위 문제의 결과값을 저장하는 데에 사용할 예정입니다.
+//memo 라는 빈 배열의 n 번째 인덱스가 undefined 가 아니라면, 즉 n 번째 인덱스에 어떤 값이 저장되어 있다면 저장되어 있는 값을 그대로 불러서 사용합니다.
+//undefined라면, 즉 처음 계산하는 수라면 fibMemo(n-1, memo) + fibMemo(n-2, memo)를 이용하여 값을 계산해 주고 그 결과값을 res 라는 변수에 할당해 줍니다.
+//마지막으로 res 를 리턴하기 전 memo 의 n 번째 인덱스에 res 값을 저장해 줍니다. 그 이유는 (n+1)번째의 값을 구하고 싶을 때 n번째 값을 memo 에서 꺼내 사용하기 위함입니다.</code>
+        </deckgo-highlight-code>
+<p>저장되어 있는 값을 가져다 쓰기 시작하면서 시간복잡도가 O(2^N)에서 O(N)로 변했다. 이 방법을 사용하면 n에 큰 수를 할당해도 전과 같은 딜레이가 발생하지 않는다. 아래 그림처럼 내려가면서 문제를 해결한다고 해서 Top-down방식이라고 부르기도 한다.</p>
+<p> </p>
+<p><strong>Iteration + Tabulation</strong></p>
+<p>Top-down이 있다면 당연히 Bottom-up도 있다.
+반복문을 이용해서 피보나치를 다시 구현해보자.</p>
+<deckgo-highlight-code language="js" terminal="carbon" theme="seti"  >
+          <code slot="code">function fibTab(n) {
+  if (n &lt;= 2) return 1;
+  let fibNum = [0, 1, 1];
+  // n 이 1 &amp; 2일 때의 값을 미리 배열에 저장해 놓는다
+  for (let i = 3; i &lt;= n; i++) {
+    fibNum[i] = fibNum[i - 1] + fibNum[i - 2];
+    // n &gt;= 3 부터는 앞서 배열에 저장해 놓은 값들을 이용하여
+    // n번째 피보나치 수를 구한 뒤 배열에 저장 후 리턴한다
+  }
+  return fibNum[n];
+}</code>
+        </deckgo-highlight-code>
+<p>이 방법도 n이 1, 2일 때의 값을 미리 저장해 놓음으로써 불필요한 딜레이를 없앨 수 있는 방법이다.</p>
+<p> </p>
+<p><strong>금고를 털어라</strong></p>
+<deckgo-highlight-code language="js" terminal="carbon" theme="seti"  >
+          <code slot="code">function ocean(target, type) {
+  // 1단계: 배열을 하나 만들어 준다. 길이는 target보다 1이 크고, 요소는 첫 요소를 제외하고 모두 0으로 채워준다. [1, 0, 0, 0, 0, 0, 0, 0, 0,........ , 0]
+  // 이 배열의 각 요소는 type의 요소들(화폐 단위)을 사용해서 0부터 target+1까지 수들을 만들 수 있는 경우의 수이다. 0은 아무것도 고르지 않았을 때의 경우의 수인 1이 미리 할당되어 있고, 나머지 요소들도 경우의 수를 차차 채워 나갈 것이다.
+  let arr = [1];
+  for (let i = 0; i &lt; target; i++) {
+    arr.push(0);
+  }
+  // arr를 1을 넣은 배열로 할당해 준 후, 반복문을 돌려서 0을 target만큼 push해주었다.
+
+  type.map(function (ele) {
+    // ele = 10, 20, 50
+    arr[ele] += 1; // [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1....1, .... , 1]
+    // 여기까지가 type에 있는 요소들을 arr에 표시하는 작업이다.
+    // 화폐 단위가 있으니 그 화폐 1장만을 선택했을 경우가 1로 표시된다.
+    for (let i = ele + 1; i &lt;= target; i++) {
+      arr[i] += arr[i - ele];
+      // arr에 표시를 해주는 방법:
+      // map을 통한 이 작업은 type의 요소의 갯수만큼 반복한다.
+      // ele가 10일 때 : i가 10부터 50까지 돌면서 표시를 한다.
+      // debugger를 돌려서 과정을 꼭 살펴보자.
+    }
+  });
+  return arr[target]; // 굉장히 긴 과정을 지나다보면 어느새 target번째에는 경우의 수가 target을 만드는 경우의 수가 들어와 있다.
+}</code>
+        </deckgo-highlight-code>
+<p>위와 같은 풀이처럼 하나의 ‘저장 배열’을 만든 다음 반복되는 작업을 진행하는 것을 Dynamic Programming이라고 기억해 두자.</p>
+<p> </p>
+<h2>📆   2021. 11. 10 (수)</h2>
+<h3><span>[Algorithm] with Math</span></h3>
+<p> </p>
+<p><strong>기본 규칙</strong></p>
+<p>조합, 순열, 중복 순열 모두 같은 로직으로 진행된다.</p>
+<p>배열에서 n개를 선택하는 경우</p>
+<p><strong>1.</strong> 하나의 수를 선택한다.<br>
+<strong>2.</strong> n개를 뽑는 순열중 하나의 수를 선택했으니 남은 배열에서 n-1개를 선택해야한다.</p>
+<p>이 두 과정을 반복하면 조합, 순열, 중복순열을 구할 수 있다.<br>
+조합, 순열, 중복 순열은 서로 남은 배열을 설정해주는 과정에서만 차이가 있다.</p>
+<p><code>조합</code> : 중복x, 순서x<br>
+<code>순열</code> : 중복x, 순서o<br>
+<code>중복 순열</code> : 중복o, 순서o</p>
+<p> </p>
+<p><strong>1. 조합</strong></p>
+<p>서로 다른 n개의 물건에서 순서를 생각하지 않고 r개를 택할 때, 이것은 n개에서 r개를 택하는 조합이라 하고, 이 조합의 수를 기호로 nCr와 같이 나타낸다.</p>
+<p>4C3은 4개중에 3개씩 선택할 때 나올 수 있는 모든 조합을 구한다는 말이다. 이 때, 조합의 순서는 상관이 없다. 즉 [1, 2, 3] = [3, 2, 1] 이렇게 순서가 바뀌어도 같은 구성이기 때문에 하나의 조합으로 취급한다는 이야기다.</p>
+<deckgo-highlight-code language="js" terminal="carbon" theme="seti"  >
+          <code slot="code">const getCombinations = function (arr, selectNumber) {
+    const results = [];
+    if (selectNumber === 1) return arr.map((el) =&gt; [el]); 
+    // n개중에서 1개 선택할 때(nC1), 바로 모든 배열의 원소 return
+
+    arr.forEach((fixed, index, origin) =&gt; {
+      // 해당하는 fixed를 제외한 나머지 뒤
+      const rest = origin.slice(index + 1); 
+      // 나머지에 대해서 조합을 구한다.
+      const combinations = getCombinations(rest, selectNumber - 1); 
+      //  돌아온 조합에 떼 놓은(fixed) 값 붙이기
+      const attached = combinations.map((el) =&gt; [fixed, ...el]); 
+      // 배열 spread syntax 로 모두다 push
+      results.push(...attached); 
+    });
+
+    return results; // 결과 담긴 results return
+}</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>2. 순열</strong></p>
+<p>서로 다른 n개의 물건 중에서 r개를 택하여 한 줄로 배열하는 것을 n개의 물건에서 r개 택하는 순열이라 하고, 이 순열의 수를 기호로 nPr와 같이 나타낸다. 조합은 순서에 상관없이 선택한 것이라면, 순열은 순서가 중요하다.</p>
+<deckgo-highlight-code language="js" terminal="carbon" theme="seti"  >
+          <code slot="code"> const getPermutations = function (arr, selectNumber) {
+    const results = [];
+    if (selectNumber === 1) return arr.map((el) =&gt; [el]); 
+    // n개중에서 1개 선택할 때(nP1), 바로 모든 배열의 원소 return. 1개선택이므로 순서가 의미없음.
+
+    arr.forEach((fixed, index, origin) =&gt; {
+      // 해당하는 fixed를 제외한 나머지 배열  
+      const rest = [...origin.slice(0, index), ...origin.slice(index+1)] 
+      // 나머지에 대해서 순열을 구한다.
+      const permutations = getPermutations(rest, selectNumber - 1); 
+      //  돌아온 순열에 떼 놓은(fixed) 값 붙이기
+      const attached = permutations.map((el) =&gt; [fixed, ...el]); 
+      // 배열 spread syntax 로 모두다 push
+      results.push(...attached); 
+    });
+
+    return results; // 결과 담긴 results return
+}</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>3. 중복 순열</strong></p>
+<deckgo-highlight-code language="js" terminal="carbon" theme="seti"  >
+          <code slot="code">function getPermutationWithRepetition(arr, selectNum) {
+  const result = [];
+  // n개중에서 1개 선택할 때(nP1), 바로 모든 배열의 원소 return. 1개선택이므로 순서가 의미없음.
+  if (selectNum === 1) return arr.map((el) =&gt; [el]);
+  
+  arr.forEach((fixed, idex, origin) =&gt; {
+    // 중복이 혀용되므로 배열이 그대로 재귀된다.
+    const rest = arr;
+    // 나머지에 대해서 중복 순열을 구한다.
+    const permutations = getPermutationWithRepetition(rest, selectNum - 1);
+    //  돌아온 중복 순열에 떼 놓은(fixed) 값 붙이기
+    const attached = permutations.map((el) =&gt; [fixed, ...el]);
+    // 배열 spread syntax 로 모두다 push
+    result.push(...attached);
+  });
+  return result; // 결과 담긴 results return
+}</code>
+        </deckgo-highlight-code>
+<p> </p>
+<h2>📆   2021. 11. 11 (목)</h2>
+<h3><span>[Database] SQL</span></h3>
+<p> </p>
+<p><strong>DML(Data Manipulation Language)</strong></p>
+<p>insert, update, delete, select</p>
+<p> </p>
+<p><strong>DDL(Data Definition Language)</strong></p>
+<p>create, alter, drop, truncate, rename</p>
+<p> </p>
+<p><strong>DCL(Data Control Language)</strong></p>
+<p>grant, revoke</p>
+<p> </p>
+<p><strong>TCL(Transaction Control Language)</strong></p>
+<p>commit, rollback, savepoint</p>
+<hr>
+<p> </p>
+<p><strong>Create</strong></p>
+<ul>
+<li>테이블 생성</li>
+</ul>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">CREATE table student (
+칼럼명 타입 조건(not null 등),
+칼럼명 타입 조건(not null 등),
+칼럼명 타입 조건(not null 등),
+PRIMARY KEY ~~ );</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>Insert</strong></p>
+<ul>
+<li>테이블에 데이터 삽입</li>
+</ul>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">INSERT INTO student values(테이블에 맞는 데이터 양식);</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>Update</strong></p>
+<ul>
+<li>데이터 내용 수정</li>
+</ul>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">UPDATE 테이블 SET 칼럼 = &#39;값&#39; where 조건;</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>Delete</strong></p>
+<ul>
+<li>데이터 삭제</li>
+</ul>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">DELETE FROM 테이블 WHERE 조건;</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>select</strong></p>
+<ul>
+<li>모든 컬럼 조회</li>
+</ul>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT * FROM student;</code>
+        </deckgo-highlight-code>
+<p> </p>
+<ul>
+<li>필요한 컬럼 조회</li>
+</ul>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT age, name FROM student;</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>select 문법 순서</strong></p>
+<p><strong>1.</strong> select<br>
+<strong>2.</strong> from<br>
+<strong>3.</strong> where<br>
+<strong>4.</strong> group by<br>
+<strong>5.</strong> having<br>
+<strong>6.</strong> order by *쿼리의 실행 순서는 from ▶ where ▶ group by ▶having ▶ select ▶ order by</p>
+<p> </p>
+<p><strong>Where</strong></p>
+<ul>
+<li>컬럼 조회의 조건</li>
+</ul>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT * FROM student WHERE id = 1;</code>
+        </deckgo-highlight-code>
+<ul>
+<li>and, or 조건</li>
+</ul>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT * FROM student WHERE sex=&#39;남자&#39; AND(OR) address=&#39;서울&#39;;</code>
+        </deckgo-highlight-code>
+<ul>
+<li>like 조건</li>
+</ul>
+<p><code>%</code> : 여러개<br>
+<code>_</code> : 1개</p>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT * FROM student WHERE name = &#39;김%&#39;;
+SELECT * FROM student WHERE name = &#39;김_&#39;;</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>Limit</strong></p>
+<ul>
+<li>조회 결과 행의 수 제한</li>
+</ul>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT * FROM student LIMIT 1;</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>Group By</strong></p>
+<ul>
+<li>특정 칼럼 기준의 데이터 그룹핑</li>
+</ul>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT age FROM student GROUP BY age;</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>Order by</strong></p>
+<ul>
+<li>특정 칼럼 기준으로 정렬</li>
+</ul>
+<p><code>ASC</code> : 오름차순<br>
+<code>DESC</code> : 내림차순</p>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT * FROM student ORDER BY age DESC;</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>Distinct</strong></p>
+<ul>
+<li>중복 행을 제거</li>
+</ul>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT DISTINCT name FROM student;</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>Alias</strong></p>
+<ul>
+<li>칼럼에 별칭을 주고 조회</li>
+</ul>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT * FROM student AS highschool</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>연산자</strong></p>
+<p>산술 연산자 : + - / *<br>
+비교 연산자 : > &#x3C; >= &#x3C;= = != ^= &#x3C;><br>
+논리 연산자 : and, or, not<br>
+비교 연산자2 : between and, in, is null, like</p>
+<p> </p>
+<p><strong>함수</strong></p>
+<ul>
+<li><code>UPPER(str)</code> : 대문자 변환</li>
+<li><code>LOWER(str)</code> : 소문자 변환</li>
+<li><code>INITCAP(str)</code> : 첫 글자만 대문자로 변환</li>
+<li><code>CONCAT(str, tmp)</code> : 두 문자값 결합</li>
+<li><code>SUBSTR(str,a,b)</code> : 문자 추출 a = 시작위치, b = 개수</li>
+<li><code>LENGTH(str)</code> : 문자열 길이 반환</li>
+<li><code>L/RPAD(대상,총길이,채울문자열)</code> : 대상 문자열에 채울문자열을 총길이만큼 채워서 반환</li>
+<li><code>LTRIM, RTRIM(대상, 제거할 문자열)</code> : 대상 문자열에서 제거할 문자열을 없앤 뒤 반환</li>
+<li><code>REPLACE(대상문자열,바꾸고싶은대상,바꾸고싶은내용)</code> : 대상문자열에서 바꾸고 싶은 대상을 바꾸고 싶은 내용으로 수정한 뒤 반환</li>
+</ul>
+<p><code>REPLACE('ABCDEFG','DEF','XXX')</code> ▶ ABCXXXG</p>
+<p> </p>
+<p><strong>계산 함수</strong></p>
+<p>max, min, count, avg, sum</p>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT 계산함수(칼럼) FROM 테이블;</code>
+        </deckgo-highlight-code>
+<p> </p>
+<p><strong>JOIN</strong></p>
+<p><img src="https://images.velog.io/images/quato/post/faf93250-0b2e-4974-8bf4-a43b77330fc3/image.png" alt=""></p>
+<p><strong>INNER JOIN</strong></p>
+<p>일반적인 조인, A와 B 테이블의 조인에서 A와 B 테이블 모두에 있는 레코드만 조회된다.</p>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT A.a, A.b, B.c
+FROM A
+JOIN B
+ON B.a = A.c;</code>
+        </deckgo-highlight-code>
+<p>ON 대신 WHERE를 사용할 수 있다.</p>
+<p> </p>
+<p><strong>LEFT OUTER JOIN</strong></p>
+<p>A와 B 테이블의 조인 상황에서 A테이블 기준으로 B테이블에 A테이블의 칼럼과 일치하는 조건이 없으면 B테이블의 칼럼은 NULL로 조회된다.</p>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT A.a, A.b, B.c
+FROM A
+LEFT OUTER JOIN B
+ON B.a = A.c;</code>
+        </deckgo-highlight-code>
+<p>outer를 생략할 수 있다.</p>
+<p> </p>
+<p><strong>RIGHT OUTER JOIN</strong></p>
+<p>A와 B 테이블의 조인 상황에서 B테이블 기준으로 A테이블에 B테이블의 칼럼과 일치하는 조건이 없으면 A테이블의 칼럼은 NULL로 조회된다.</p>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT A.a, A.b, B.c
+FROM A
+RIGHT OUTER JOIN B
+ON B.a = A.c;</code>
+        </deckgo-highlight-code>
+<p>역시 outer를 생략할 수 있다.</p>
+<p> </p>
+<p><strong>CROSS JOIN(Cartesian JOIN)</strong></p>
+<p>집합의 곱 개념으로</p>
+<p><code>A= {a, b, c, d}</code> , <code>B = {1, 2, 3}</code> 일 때 <code>A CROSS JOIN B</code>는 (a,1), (a, 2), (a,3), (b,1), (b,2), (b,3), (c, 1), (c,2), (c,3), (d, 1), (d, 2), (d,3)의 결과가 된다. 결과의 개수는 <code>n(A) * n(B)</code> 이다.</p>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="seti"  >
+          <code slot="code">SELECT A.a A.b B.c
+FROM A
+CROSS JOIN B;
+// 위 아래 쿼리의 결과는 같다.
+SELECT A.a, A.b, B.c
+FROM A, B;</code>
+        </deckgo-highlight-code>
+<p> </p>
+<h2>📆   2021. 11. 12 (금)</h2>
+<h3><span>[Database] Schema Design</span></h3>
+<p> </p>
+<p><strong>스키마</strong></p>
+<p>스키마 : 데이터베이스의 자료구조와 자료 간의 관계를 형식언어로 정의한 구조</p>
+<p> </p>
+<p><strong>스키마의 종류</strong></p>
+<ul>
+<li>외부 스키마(External Schema)</li>
+</ul>
+<p>개인의 입장에서 필요로 하는 데이터베이스의 논리적 구조를 정의한 것이다.<br>
+전체 데이터베이스의 한 논리적인 부분으로 볼 수 있으므로 서브 스키마라고도 부른다.<br>
+하나의 DBMS에서 여러 개가 존재할 수 있고, 하나의 외부 스키마를 여럿이 공유 가능하다.</p>
+<ul>
+<li>개념 스키마(Conceptual Schema)</li>
+</ul>
+<p>개체 간의 관계와 제약조건을 나타내고 DBMS의 접근권한, 보안, 무결성 규칙에 대한 명세를 정의한 것이다.</p>
+<ul>
+<li>내부 스키마(Internal Schema)</li>
+</ul>
+<p>데이터베이스의 물리적 구조를 정의한 것이다.<br>
+시스템 프로그래머나 설계자가 보는 관점의 스키마다.<br>
+DB의 전체적인 구조로써 하나만 존재할 수 있다.</p>
+<p> </p>
+<p><strong>엔티티와 관계</strong></p>
+<p>관계형 데이터베이스(Oracle, MySQL, MS-SQL, SQLite 등등)는 엔티티끼리 관계를 맺을 수 있어서 관계형 DB라는 이름이 붙었다.</p>
+<p>엔티티(Entity) : DataBase에 표현하려고 하는 유형, 무형의 객체로서 서로 구별되는 것을 뜻한다.</p>
+<p>관계는 두 엔티티가 서로 관련이 있을 때를 말하는데, 1:1, 1:N, N:M 관계를 맺을 수 있다.</p>
+<p> </p>
+<p><strong>1:1 관계(일대일 관계)</strong></p>
+<p>1:1 관계란 어느 엔티티 쪽에서 상대 엔티티와 반드시 단 하나의 관계를 가지는 것을 말한다.</p>
+<p>예를 들어, 우리나라에서 결혼 제도는 일부일처제로, 한 남자는 한 여자와, 한 여자는 한 남자와 밖에 결혼을 할 수 없다.</p>
+<p>남편 또는 부인을 2명 이상 둘 수 없는데, 이러한 관계가 1:1 관계다.</p>
+<p> </p>
+<p><strong>1:N 관계(일대다 관계)</strong></p>
+<p>1:N 관계는 한 쪽 엔티티가 관계를 맺은 엔티티 쪽의 여러 객체를 가질 수 있는 것을 의미한다.</p>
+<p>현실세계에는 1:N관계가 많이 있는데, 실제 DB를 설계할 때 자주 쓰이는 방식이다.</p>
+<p>1:N 관계는 N:M 관계처럼 새로운 테이블을 만들지 않는다.</p>
+<p>예를 들어, 부모와 자식 관계를 생각해보면, 부모는 자식을 1명, 2명, 3명, 그 이상도 가질 수 있다.
+이를 부모가 자식을 소유한다고(has a 관계) 표현한다.</p>
+<p>반대로 자식 입장에서는 부모(아버지, 어머니의 쌍)를 하나만 가질 수 밖에 없다.</p>
+<p>이러한 관계를 1:N 관계라고 하며, 계층적인 구조로 이해할 수도 있다.</p>
+<p>여러 명의 자식(N)의 입장에서 한 쌍의 부모(1)중 어떤 부모에 속해 있는지 표현해야하므로 부모 테이블의 PK를 자식 테이블에 FK로 집어 넣어 관계를 표현한다.</p>
+<p>PK(Primary Key) : 각 엔티티를 식별할 수 있는 대표키, 테이블에서 중복되지 않는(Unique) 값, Null일 수 없다.</p>
+<p>FK(Foreign Key : 다른 테이블의 기본키를 참조, 모든 필드는 참조하는 기본키와 동일한 도메인(값의 종류&#x26;범위)을 갖는다.
+모든 필드 값은 참조하는 기본키와 동일하거나 null 일 수 있다.</p>
+<p>즉 부모 테이블(1)에서는 내 자식들이 누구인지 정보를 넣을 필요가 없고, 자식 테이블(N)에서만 각각의 자식들이 자신의 부모 정보(FK)를 넣음 으로써 관계를 표현할 수 있다.</p>
+<p> </p>
+<p><strong>N:M 관계(다대다 관계)</strong></p>
+<p>N:M 관계는 관계를 가진 양쪽 엔티티 모두에서 1:N 관계를 가지는 것을 말한다.</p>
+<p>즉, 서로가 서로를 1:N 관계로 보고 있는 것이다.</p>
+<p>예를들어, 학원과 학생의 관계를 생각해보면, 한 학원에는 여러명의 학생이 수강할 수 있으므로 1:N 관계를 가진다.</p>
+<p>반대로 학생도 여러개의 학원을 수강할 수 있으므로, 이 사이에서도 1:M 관계를 가진다.</p>
+<p>그러므로 학원과 학생은 N:M 관계를 가진다고 할 수 있다.</p>
+<p>N:M 관계는 서로가 서로를 1:N 관계, 1:M 관계로 갖고 있기 때문에, 서로의 PK를 자신의 외래키 컬럼으로 갖고 있으면 된다.</p>
+<p>일반적으로 N:M 관계는 두 테이블의 대표키를 컬럼으로 갖는 또 다른 테이블을 생성해서 관리한다.</p></div><style data-emotion="css jk0g1c">.css-jk0g1c{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:7rem 0 4rem 0;}@media all and (min-width: 280px) and (max-width: 768px){.css-jk0g1c{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;text-align:center;}}</style><div class="css-jk0g1c e7u0kuw0"><style data-emotion="css 19zz1jv">.css-19zz1jv{display:block;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;text-align:center;width:100%;margin-top:50px;margin-bottom:50px;font-weight:100;font-size:40px;line-height:1.5;}@media (min-width: 768px){.css-19zz1jv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-top:50px;margin-bottom:50px;margin-left:0;}}.css-19zz1jv div.introduction{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;word-break:keep-all;}.css-19zz1jv div.introduction .react-rotating-text-cursor{-webkit-animation:blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;animation:blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;}.css-19zz1jv div.introduction strong{display:inline-block;font-weight:600;}.css-19zz1jv div.introduction p.title .react-rotating-text-cursor{font-size:45px;line-height:45px;}.css-19zz1jv div.introduction div.social-links{margin-top:20px;color:rgba(98, 92, 96, 0.3);}.css-19zz1jv .thumbnail{display:block;width:250px;}</style><div class="css-19zz1jv eiyl07e0"><div class="introduction"><p class="title">안녕하세요<br/><span style="color:inherit"><span class="react-rotating-text-cursor">|</span></span><br/>개발자 <strong>문현준</strong>입니다.</p><div class="social-links"><a href="mailto:hyeonjun5256@gmail.com" aria-label="Mail"><style data-emotion="css 1pjazn2">.css-1pjazn2{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;font-size:2.1875;}</style><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1pjazn2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="EmailIcon"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path></svg></a><a href="https://github.com/quatoHub" target="_blank" rel="noreferrer noopener" aria-label="Github"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1pjazn2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="GitHubIcon"><path d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path></svg></a><a href="https://www.linkedin.com/in/hyeonjun-moon-19777b218/" target="_blank" rel="noreferrer noopener" aria-label="Linktree"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1pjazn2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkedInIcon"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></a></div></div></div><style data-emotion="css xp5w7c">.css-xp5w7c{display:none;}@media (min-width: 768px){.css-xp5w7c{display:block;width:25rem;height:25rem;z-index:0;}.css-xp5w7c >img{display:none;}@media (min-width: 768px){.css-xp5w7c >img{display:block;width:25rem;height:25rem;object-fit:cover;isolation:isolate;}}}</style><div class="css-xp5w7c e1w7rtj80"><img src="/static/profile-6b4cdc0983afae4a3d19cc40f09b888a.gif" alt="profile"/></div></div><style data-emotion="css 1czo8k0">.css-1czo8k0{padding:6rem 0 2rem;}</style><div class="css-1czo8k0 e1nr5epo0"></div><style data-emotion="css 1mhuc9f">.css-1mhuc9f{padding:5rem 0 2rem;font-size:1.5rem;text-align:center;-webkit-text-decoration:underline;text-decoration:underline;text-underline-position:under;cursor:default;}</style><p class="css-1mhuc9f e1un1ed30">Latest Posts</p><style data-emotion="css l4wxtw">.css-l4wxtw{width:72rem;margin:0 auto;}@media all and (min-width: 280px) and (max-width: 768px){.css-l4wxtw{width:100%;}}</style><div class="css-l4wxtw eitejtu0"><style data-emotion="css 1sf9o35">.css-1sf9o35{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 0 1.5rem;padding:1.7rem;border-radius:1rem;box-shadow:0 0 0.4rem rgba(0, 0, 0, 0.2);-webkit-transition:0.3s box-shadow;transition:0.3s box-shadow;cursor:pointer;}.css-1sf9o35:hover{box-shadow:0 0 0.6rem rgba(0, 0, 0, 0.4);-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;-webkit-transform:scale(1.05);-moz-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05);}.css-1sf9o35:nth-last-of-type(1){margin:0;}@media all and (min-width: 280px) and (max-width: 768px){.css-1sf9o35{-webkit-flex-direction:column-reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;}}</style><a class="css-1sf9o35 e179ueb34" href="/TypeScript/2022-03-14-How to use TypeScript/"><style data-emotion="css 1h9e0xm">.css-1h9e0xm{-webkit-flex:1;-ms-flex:1;flex:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0 1.7rem 0 0;}</style><div class="css-1h9e0xm e179ueb33"><style data-emotion="css gb0crk">.css-gb0crk{display:-webkit-box;-webkit-box-orient:vertical;word-break:keep-all;-webkit-line-clamp:1;overflow:hidden;font-size:2rem;font-weight:700;line-height:140%;}@media all and (min-width: 280px) and (max-width: 768px){.css-gb0crk{-webkit-line-clamp:3;}}</style><h1 class="css-gb0crk e179ueb32">How to use TypeScript</h1><style data-emotion="css 7psvga">.css-7psvga{display:-webkit-box;-webkit-box-orient:vertical;overflow-wrap:break-word;-webkit-line-clamp:2;overflow:hidden;font-size:1.5rem;line-height:130%;margin:1.3rem 0;}@media all and (min-width: 280px) and (max-width: 768px){.css-7psvga{-webkit-line-clamp:3;}}</style><h3 class="css-7psvga e179ueb31">타입스크립트 기초 학습 정리입니다.</h3><style data-emotion="css igxckm">.css-igxckm{font-size:1.3rem;color:rgba(98, 92, 96, 0.7);}</style><p class="css-igxckm e179ueb30">13 March, 2022<!-- --> · <!-- -->5<!-- --> min read</p></div><style data-emotion="css 37khvq">.css-37khvq{width:12.15rem;height:10.65rem;border-radius:1rem;overflow:hidden;z-index:0;}@media all and (min-width: 280px) and (max-width: 768px){.css-37khvq{width:100%;height:auto;margin:0 0 1.7rem;}}</style><div class="css-37khvq ez41dc1"><style data-emotion="css 1h37zi1">.css-1h37zi1{width:100%;height:100%;object-fit:cover;isolation:isolate;}</style><div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained css-1h37zi1 ez41dc0"><div style="max-width:730px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;411&#x27; width=&#x27;730&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div><img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear" decoding="async" src="data:image/jpeg;base64,/9j/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEFBP/EABUBAQEAAAAAAAAAAAAAAAAAAAMI/9oADAMBAAIQAxAAAAGNiilux4hjl//EABkQAAIDAQAAAAAAAAAAAAAAAAIEAQMFIP/aAAgBAQABBQLOVzmRtXUCeP/EAB0RAAICAgMBAAAAAAAAAAAAAAECAxESIhATIRT/2gAIAQMBAT8B7E60T54slu5bnze2LbATCPwaDGMaj22tuP/EAB0RAAICAwADAAAAAAAAAAAAAAECAxESEyIABBT/2gAIAQIBAT8B1SbHf6ZsWqocfX1pSBeSYDL0QXOUjdE1S0o8/8QAIhAAAQMCBgMAAAAAAAAAAAAAAQIEEQUhAAMSEyJhFCAx/9oACAEBAAY/AnxqFTNOOQ13WaQ2LgvXOuPGstG3x5a56xCKjl51iZS1cpFviZWkSVdcUm2r1//EABoQAQADAAMAAAAAAAAAAAAAAAERITEAIEH/2gAIAQEAAT8h8rhwYRAF6U5JvmiahZlkqNkiStOn/9oADAMBAAIAAwAAABAHD//EABgRAQEAAwAAAAAAAAAAAAAAAAERACEx/9oACAEDAQE/EHkEDa9EFXIGCFTP/8QAFxEBAQEBAAAAAAAAAAAAAAAAARExEP/aAAgBAgEBPxDK7soKQ4GJ7S8H/8QAGRABAQADAQAAAAAAAAAAAAAAAREAIEFR/9oACAEBAAE/ELQif8AC2JslZAgGX24IA5RExc5YUjClsel7PdP/2Q==" alt=""/><picture><source type="image/webp" data-srcset="/static/1ee595e90075abf488833a6c6536813d/98c3d/typescript.webp 183w,/static/1ee595e90075abf488833a6c6536813d/da319/typescript.webp 365w,/static/1ee595e90075abf488833a6c6536813d/e195b/typescript.webp 730w,/static/1ee595e90075abf488833a6c6536813d/b523f/typescript.webp 1460w" sizes="(min-width: 730px) 730px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 730px) 730px, 100vw" decoding="async" loading="lazy" data-src="/static/1ee595e90075abf488833a6c6536813d/9d1bb/typescript.jpg" data-srcset="/static/1ee595e90075abf488833a6c6536813d/35c22/typescript.jpg 183w,/static/1ee595e90075abf488833a6c6536813d/0837d/typescript.jpg 365w,/static/1ee595e90075abf488833a6c6536813d/9d1bb/typescript.jpg 730w,/static/1ee595e90075abf488833a6c6536813d/0a556/typescript.jpg 1460w" alt="thumbnail"/></picture><noscript><picture><source type="image/webp" srcSet="/static/1ee595e90075abf488833a6c6536813d/98c3d/typescript.webp 183w,/static/1ee595e90075abf488833a6c6536813d/da319/typescript.webp 365w,/static/1ee595e90075abf488833a6c6536813d/e195b/typescript.webp 730w,/static/1ee595e90075abf488833a6c6536813d/b523f/typescript.webp 1460w" sizes="(min-width: 730px) 730px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 730px) 730px, 100vw" decoding="async" loading="lazy" src="/static/1ee595e90075abf488833a6c6536813d/9d1bb/typescript.jpg" srcSet="/static/1ee595e90075abf488833a6c6536813d/35c22/typescript.jpg 183w,/static/1ee595e90075abf488833a6c6536813d/0837d/typescript.jpg 365w,/static/1ee595e90075abf488833a6c6536813d/9d1bb/typescript.jpg 730w,/static/1ee595e90075abf488833a6c6536813d/0a556/typescript.jpg 1460w" alt="thumbnail"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div></div></a><a class="css-1sf9o35 e179ueb34" href="/TypeScript/2022-03-13-What is TypeScript/"><div class="css-1h9e0xm e179ueb33"><h1 class="css-gb0crk e179ueb32">What is TypeScript</h1><h3 class="css-7psvga e179ueb31">타입스크립트 기초 학습 정리입니다.</h3><p class="css-igxckm e179ueb30">13 March, 2022<!-- --> · <!-- -->2<!-- --> min read</p></div><div class="css-37khvq ez41dc1"><div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained css-1h37zi1 ez41dc0"><div style="max-width:730px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;411&#x27; width=&#x27;730&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div><img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear" decoding="async" src="data:image/jpeg;base64,/9j/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEFBP/EABUBAQEAAAAAAAAAAAAAAAAAAAMI/9oADAMBAAIQAxAAAAGNiilux4hjl//EABkQAAIDAQAAAAAAAAAAAAAAAAIEAQMFIP/aAAgBAQABBQLOVzmRtXUCeP/EAB0RAAICAgMBAAAAAAAAAAAAAAECAxESIhATIRT/2gAIAQMBAT8B7E60T54slu5bnze2LbATCPwaDGMaj22tuP/EAB0RAAICAwADAAAAAAAAAAAAAAECAxESEyIABBT/2gAIAQIBAT8B1SbHf6ZsWqocfX1pSBeSYDL0QXOUjdE1S0o8/8QAIhAAAQMCBgMAAAAAAAAAAAAAAQIEEQUhAAMSEyJhFCAx/9oACAEBAAY/AnxqFTNOOQ13WaQ2LgvXOuPGstG3x5a56xCKjl51iZS1cpFviZWkSVdcUm2r1//EABoQAQADAAMAAAAAAAAAAAAAAAERITEAIEH/2gAIAQEAAT8h8rhwYRAF6U5JvmiahZlkqNkiStOn/9oADAMBAAIAAwAAABAHD//EABgRAQEAAwAAAAAAAAAAAAAAAAERACEx/9oACAEDAQE/EHkEDa9EFXIGCFTP/8QAFxEBAQEBAAAAAAAAAAAAAAAAARExEP/aAAgBAgEBPxDK7soKQ4GJ7S8H/8QAGRABAQADAQAAAAAAAAAAAAAAAREAIEFR/9oACAEBAAE/ELQif8AC2JslZAgGX24IA5RExc5YUjClsel7PdP/2Q==" alt=""/><picture><source type="image/webp" data-srcset="/static/1ee595e90075abf488833a6c6536813d/98c3d/typescript.webp 183w,/static/1ee595e90075abf488833a6c6536813d/da319/typescript.webp 365w,/static/1ee595e90075abf488833a6c6536813d/e195b/typescript.webp 730w,/static/1ee595e90075abf488833a6c6536813d/b523f/typescript.webp 1460w" sizes="(min-width: 730px) 730px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 730px) 730px, 100vw" decoding="async" loading="lazy" data-src="/static/1ee595e90075abf488833a6c6536813d/9d1bb/typescript.jpg" data-srcset="/static/1ee595e90075abf488833a6c6536813d/35c22/typescript.jpg 183w,/static/1ee595e90075abf488833a6c6536813d/0837d/typescript.jpg 365w,/static/1ee595e90075abf488833a6c6536813d/9d1bb/typescript.jpg 730w,/static/1ee595e90075abf488833a6c6536813d/0a556/typescript.jpg 1460w" alt="thumbnail"/></picture><noscript><picture><source type="image/webp" srcSet="/static/1ee595e90075abf488833a6c6536813d/98c3d/typescript.webp 183w,/static/1ee595e90075abf488833a6c6536813d/da319/typescript.webp 365w,/static/1ee595e90075abf488833a6c6536813d/e195b/typescript.webp 730w,/static/1ee595e90075abf488833a6c6536813d/b523f/typescript.webp 1460w" sizes="(min-width: 730px) 730px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 730px) 730px, 100vw" decoding="async" loading="lazy" src="/static/1ee595e90075abf488833a6c6536813d/9d1bb/typescript.jpg" srcSet="/static/1ee595e90075abf488833a6c6536813d/35c22/typescript.jpg 183w,/static/1ee595e90075abf488833a6c6536813d/0837d/typescript.jpg 365w,/static/1ee595e90075abf488833a6c6536813d/9d1bb/typescript.jpg 730w,/static/1ee595e90075abf488833a6c6536813d/0a556/typescript.jpg 1460w" alt="thumbnail"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div></div></a><a class="css-1sf9o35 e179ueb34" href="/CodeStates/2022-03-08-CodeStates IM [week 18]/"><div class="css-1h9e0xm e179ueb33"><h1 class="css-gb0crk e179ueb32">CodeStates IM [Final Project]</h1><h3 class="css-7psvga e179ueb31">CodeState Pre IM 18-21주차 기록입니다.</h3><p class="css-igxckm e179ueb30">08 March, 2022<!-- --> · <!-- -->2<!-- --> min read</p></div><div class="css-37khvq ez41dc1"><div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained css-1h37zi1 ez41dc0"><div style="max-width:730px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;411&#x27; width=&#x27;730&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div><img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear" decoding="async" src="data:image/jpeg;base64,/9j/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAEGBwn/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwb/2gAMAwEAAhADEAAAAdhYTZq2hBk1/8QAGBABAQADAAAAAAAAAAAAAAAABAMFBiD/2gAIAQEAAQUCci5jHyWx1Rx//8QAHBEBAAEEAwAAAAAAAAAAAAAAASECETFxEBJC/9oACAEDAQE/AUX3UYg6TbdKzhs6szx//8QAGxEAAgIDAQAAAAAAAAAAAAAAAQIDIQAREiL/2gAIAQIBAT8BV1CFTDG5JqRjL2tEaHMipq+rQ+gN1Rz/xAAhEAACAgEDBQEAAAAAAAAAAAACAwEEEgURIgAGFBUgI//aAAgBAQAGPwJjq1F+ouGOFSuyspjJxKY523V0iOUCJfply3ES2nrTAb24Nau9aPaOZqSDKi01ybhrrTLPJBB7KyKQk5nKIx+f/8QAFxABAQEBAAAAAAAAAAAAAAAAAREgUf/aAAgBAQABPyFMTOwEaIWIYALXwmCyRtpZQuf/2gAMAwEAAgADAAAAEBsP/8QAGBEBAQEBAQAAAAAAAAAAAAAAARExECH/2gAIAQMBAT8QcECKRilRZ5wPNcH/xAAXEQEBAQEAAAAAAAAAAAAAAAABERAh/9oACAECAQE/EFWWQFCi4GFvQby//8QAGxABAQACAwEAAAAAAAAAAAAAAREQUQAxkUH/2gAIAQEAAT8QL2S311OpjrH4MVdtjNj0zgoSwpGFNP0xDR5rrzH/2Q==" alt=""/><picture><source type="image/webp" data-srcset="/static/5ae71771cc28d8142710f1d07c2f1e79/98c3d/codestate-software-engineer.webp 183w,/static/5ae71771cc28d8142710f1d07c2f1e79/da319/codestate-software-engineer.webp 365w,/static/5ae71771cc28d8142710f1d07c2f1e79/e195b/codestate-software-engineer.webp 730w,/static/5ae71771cc28d8142710f1d07c2f1e79/b523f/codestate-software-engineer.webp 1460w" sizes="(min-width: 730px) 730px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 730px) 730px, 100vw" decoding="async" loading="lazy" data-src="/static/5ae71771cc28d8142710f1d07c2f1e79/9d1bb/codestate-software-engineer.jpg" data-srcset="/static/5ae71771cc28d8142710f1d07c2f1e79/35c22/codestate-software-engineer.jpg 183w,/static/5ae71771cc28d8142710f1d07c2f1e79/0837d/codestate-software-engineer.jpg 365w,/static/5ae71771cc28d8142710f1d07c2f1e79/9d1bb/codestate-software-engineer.jpg 730w,/static/5ae71771cc28d8142710f1d07c2f1e79/0a556/codestate-software-engineer.jpg 1460w" alt="thumbnail"/></picture><noscript><picture><source type="image/webp" srcSet="/static/5ae71771cc28d8142710f1d07c2f1e79/98c3d/codestate-software-engineer.webp 183w,/static/5ae71771cc28d8142710f1d07c2f1e79/da319/codestate-software-engineer.webp 365w,/static/5ae71771cc28d8142710f1d07c2f1e79/e195b/codestate-software-engineer.webp 730w,/static/5ae71771cc28d8142710f1d07c2f1e79/b523f/codestate-software-engineer.webp 1460w" sizes="(min-width: 730px) 730px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 730px) 730px, 100vw" decoding="async" loading="lazy" src="/static/5ae71771cc28d8142710f1d07c2f1e79/9d1bb/codestate-software-engineer.jpg" srcSet="/static/5ae71771cc28d8142710f1d07c2f1e79/35c22/codestate-software-engineer.jpg 183w,/static/5ae71771cc28d8142710f1d07c2f1e79/0837d/codestate-software-engineer.jpg 365w,/static/5ae71771cc28d8142710f1d07c2f1e79/9d1bb/codestate-software-engineer.jpg 730w,/static/5ae71771cc28d8142710f1d07c2f1e79/0a556/codestate-software-engineer.jpg 1460w" alt="thumbnail"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div></div></a></div></main><style data-emotion="css 4xc2jd">.css-4xc2jd{position:relative;width:100%;margin:8rem auto 0;background-color:rgba(241, 237, 233, 0.5);text-align:center;}</style><footer class="css-4xc2jd ebzlrk83"><style data-emotion="css 1nq53kl">.css-1nq53kl{font-size:1.5rem;padding:4rem;}</style><nav class="css-1nq53kl ebzlrk82"><style data-emotion="css 1p1kkwv">.css-1p1kkwv{font-weight:700;margin:0 3rem 0 0;}.css-1p1kkwv:hover{color:rgba(104, 104, 172, 1);}.css-1p1kkwv:nth-last-of-type(1){margin:0;}</style><a class="css-1p1kkwv ebzlrk81" href="/">Home</a><a class="css-1p1kkwv ebzlrk81" href="/about">About</a><a class="css-1p1kkwv ebzlrk81" href="/category">Category</a></nav><style data-emotion="css 10g5ypw">.css-10g5ypw{font-size:1.3rem;padding:0 0 2rem;color:rgba(41, 40, 45, 1);cursor:default;}.css-10g5ypw a{color:rgba(104, 104, 172, 1);}</style><p class="css-10g5ypw ebzlrk80">© <!-- -->2022<!-- --> 문현준<span> Powered by <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer noopener" aria-label="Gatsby">Gatsby</a></span></p></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-215047484-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/CodeStates/2021-11-08-CodeStates IM [week 11]/";window.___webpackCompilationHash="d61ca0ecaf6ad103efaa";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-5fdbab51f61e9338ed09.js"],"app":["/app-0ed7e91c6f5154e7479a.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-a2559f1c4c2658bab236.js"],"component---src-pages-about-tsx":["/component---src-pages-about-tsx-ccd2d5f69d2490d3c552.js"],"component---src-pages-book-tsx":["/component---src-pages-book-tsx-ff99fa6828356fc941a5.js"],"component---src-pages-category-tsx":["/component---src-pages-category-tsx-b3390b4b60aa8baa423a.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-c7671d5d3f1c11bdf295.js"],"component---src-templates-category-template-tsx":["/component---src-templates-category-template-tsx-34f54c4c29c07fe92934.js"],"component---src-templates-page-template-tsx":["/component---src-templates-page-template-tsx-41a5a084fd5082bbd783.js"],"component---src-templates-post-template-tsx":["/component---src-templates-post-template-tsx-8a622d0614fdbb4a61b4.js"]};/*]]>*/</script><script src="/polyfill-5fdbab51f61e9338ed09.js" nomodule=""></script><script src="/component---src-templates-post-template-tsx-8a622d0614fdbb4a61b4.js" async=""></script><script src="/1ad49f364241ea80ec6cc70e358d5df1079af924-c84ac1aa142bbc5e099a.js" async=""></script><script src="/8b19f8696c6d1a3824c107eabb09d602e81c149c-00846531150fecae10b4.js" async=""></script><script src="/commons-3f190f1558c40e6e812e.js" async=""></script><script src="/app-0ed7e91c6f5154e7479a.js" async=""></script><script src="/framework-53b3056a63989a6bbb20.js" async=""></script><script src="/webpack-runtime-ead9db5194c6cab640af.js" async=""></script></body></html>
