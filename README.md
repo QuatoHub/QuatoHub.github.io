@@ -1,105 +1,141 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's blog starter
-</h1>
+<br />
 
-Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+## About The Project
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+#### 기술 블로그 사이트입니다.
 
-## 🚀 Quick start
+#### [Gatsby](https://www.gatsbyjs.com/)를 사용했습니다.
 
-1.  **Create a Gatsby site.**
+```shell
+npm install -g gatsby-cli
+```
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site, specifying the blog starter.
+```shell
+gatsby new
+```
 
-    ```shell
-    # create a new Gatsby site using the blog starter
-    gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
-    ```
+<br />
 
-1.  **Start developing.**
+## Main Feature
 
-    Navigate into your new site’s directory and start it up.
+#### 📝 Blog Post
 
-    ```shell
-    cd my-blog-starter/
-    gatsby develop
-    ```
+- 전체 글 목록
 
-1.  **Open the source code and start editing!**
+- 글 10개 기준으로 페이지네이션
 
-    Your site is now running at `http://localhost:8000`!
+- contents 폴더 기준으로 slug 자동 생성
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries)._
+- markdown 파일 작성 내용 html로 표시
 
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+- 댓글 작성 기능
 
-## 🚀 Quick start (Gatsby Cloud)
+#### 📚 Category
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+- 전체 카테고리 목록
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-blog)
+- 선택한 카테고리 글 목록
 
-## 🧐 What's inside?
+#### 💬 About
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+- Resume 내용 표시
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+#### 🔍 SEO
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+- 페이지별로 meta 태그 생성
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+- Google Analytics, Sitemap.xml, Robots.txt 사용 
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+<br />
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+## Built With
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+| React | Gatsby | React Helmet | Emotion |
+| :---: | :----: | :----------: | :-----: |
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
+```json
+"dependencies": {
+  "@deckdeckgo/highlight-code": "^3.6.0",
+  "@emotion/react": "^11.7.1",
+  "@emotion/styled": "^11.6.0",
+  "emotion-reset": "^3.0.1",
+  "gatsby": "^4.4.0",
+  "gatsby-plugin-advanced-sitemap": "^2.0.0",
+  "gatsby-plugin-canonical-urls": "^4.4.0",
+  "gatsby-plugin-emotion": "^7.6.0",
+  "gatsby-plugin-google-analytics": "^4.4.0",
+  "gatsby-plugin-image": "^2.4.0",
+  "gatsby-plugin-manifest": "^4.4.0",
+  "gatsby-plugin-react-helmet": "^5.4.0",
+  "gatsby-plugin-robots-txt": "^1.6.14",
+  "gatsby-plugin-sharp": "^4.4.0",
+  "gatsby-remark-copy-linked-files": "^5.4.0",
+  "gatsby-remark-external-links": "0.0.4",
+  "gatsby-remark-highlight-code": "^3.2.0",
+  "gatsby-remark-images": "^6.4.0",
+  "gatsby-remark-smartypants": "^5.4.0",
+  "gatsby-source-filesystem": "^4.4.0",
+  "gatsby-transformer-remark": "^5.10.2",
+  "gatsby-transformer-sharp": "^4.4.0",
+  "react": "^17.0.2",
+  "react-dom": "^17.0.2",
+  "react-helmet": "^6.1.0",
+  "react-icons": "^4.3.1"
+},
+"devDependencies": {
+  "@types/node": "^17.0.0",
+  "@types/react": "^17.0.37",
+  "@types/react-dom": "^17.0.11",
+  "@types/react-helmet": "^6.1.4",
+  "@typescript-eslint/eslint-plugin": "^5.7.0",
+  "@typescript-eslint/parser": "^5.7.0",
+  "eslint": "^8.5.0",
+  "eslint-config-prettier": "^8.3.0",
+  "eslint-plugin-prettier": "^4.0.0",
+  "gatsby-plugin-typescript": "^4.4.0",
+  "prettier": "^2.5.1",
+  "typescript": "^4.5.4"
+}
+```
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+<br />
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+## Getting Started
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+#### Installation
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+1. Clone the Repo
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+```shell
+git clone https://github.com/mnxmnz/mnxmnz.github.io.git
+```
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+```shell
+cd mnxmnz.github.io
+```
 
-## 🎓 Learning Gatsby
+2. Install Project Packages
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+```shell
+npm install
+```
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+3. Run the Project (Dev Mode)
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+```shell
+gatsby develop
 
-## 💫 Deploy
+http://localhost:8000/
+```
 
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/products/cloud/)
+<br />
 
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
+## License
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<br />
+
+## Contact
+
+You can shoot me an email at <a href="mailto:minzidev@gmail.com">minzidev@gmail.com</a>
